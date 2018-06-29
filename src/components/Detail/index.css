@@ -1,0 +1,109 @@
+.wrap {
+  background: #f2f4f5;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding-bottom: 20px;
+}
+
+.banner {
+  width: 100vw;
+  height: 140px;
+  overflow: hidden;
+  background: no-repeat center center;
+  background-size: cover ;
+  background-color: #000;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  background: no-repeat center center;
+  border: 1px solid #fff;
+  background-size: cover;
+  border-radius: 100%;
+  background-color: #000;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #11293b;
+}
+
+.accountName {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #949ea6;
+}
+
+.intro {
+  margin-top: 5px;
+  padding: 0 20px;
+  font-size: 13px;
+  color: #949ea6;
+}
+
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button {
+  width: auto;
+  height: 36px;
+  background: #fff;
+  color: #11293b;
+  font-weight: 600;
+  border: 1px solid #e9e9ea;
+  border-radius: 18px;
+  font-size: 14px;
+  padding: 0 14px;
+  margin: 0 7px;
+}
+
+.detail {
+  padding: 10px 15px 20px 15px;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.rowName {
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #344857;
+}
+
+.rowValue {
+  font-size: 13px;
+  color: #344857;
+  line-height: 1.54;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.socialRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #344857;
+  line-height: 1.54;
+}

@@ -1,0 +1,75 @@
+html, body, :global(#root) {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  box-sizing: border-box;
+  font-weight: 300;
+  user-select: initial;
+  background-color: #fff;
+  color: #11293b;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  color: #11293b;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  color: #7e8890;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+a {
+  color: #249cb3;
+  text-decoration: none;
+}
+
+strong,
+b {
+  color: #11293b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  padding: 0;
+  border: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+div.rmc-list-view-scrollview-content {
+  position: static !important;
+}
+
+
+::placeholder {
+  color: #d5dce0;
+}
+
+

@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  background: #000;
+  color: #fff;
+}
+.walletIcon {
+  display: block;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+.name {
+  color: #fff;
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 4px;
+}
+.info {
+  display: flex;
+  color: #c2c8cc;
+  font-size: 11px;
+}
+.balance {
+  margin-right: 11px;
+}

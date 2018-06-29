@@ -1,0 +1,49 @@
+:global .am-toast {
+  position: fixed;
+  width: 100%;
+  z-index: 111;
+  font-size: 13px;
+  text-align: center;
+}
+
+:global .am-toast > span {
+  max-width: 50%;
+}
+
+:global .am-toast-mask {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+}
+
+:global .am-toast-nomask {
+  position: fixed;
+  max-width: 50%;
+  width: auto;
+  left: 50%;
+  top: 50%;
+}
+
+:global .am-toast-notice {
+  /* transform: translateX(-50%) translateY(-50%); */
+}
+
+:global .am-toast-text {
+  min-width: 90px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+:global .am-toast.am-toast-text-icon {
+  border-radius: 6px;
+  padding: 10px;
+}
+
+:global .am-toast-text-info {
+  margin-top: 10px;
+}

@@ -1,0 +1,19 @@
+.bodyInner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #f2f4f5;
+}
+
+.button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  background-color: #249cb3;
+}
+.text {
+  font-size: 16px;
+  color: #fff;
+}

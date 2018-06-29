@@ -1,0 +1,43 @@
+{
+  "name": "stake-vote",
+  "version": "1.0.0",
+  "description": "EOS stake vote DApp",
+  "main": "index.js",
+  "repository": "git@github.com:consenlabs/stake-vote.git",
+  "author": "xwartz <stddup@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "export HARD_SOURCE=none &&roadhog server",
+    "build": "roadhog build",
+    "lint": "eslint --ext .js src test",
+    "precommit": "yarn lint",
+    "deploy_gd_api": "yarn build && rsync -va dist/*.* deploy@token-api:/home/deploy/stake-vote/dist",
+    "deploy_staging": "yarn build && rsync -va dist/*.* deploy@token-staging:/home/deploy/stake-vote/dist"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-standard": "^3.1.0",
+    "roadhog": "^2.4.1"
+  },
+  "dependencies": {
+    "bignumber.js": "^7.2.1",
+    "classnames": "^2.2.5",
+    "debounce": "^1.1.0",
+    "dva": "^2.2.3",
+    "eosjs": "^14.1.0",
+    "prop-types": "^15.6.1",
+    "rc-slider": "^8.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-loading": "^2.0.2",
+    "react-modal": "^3.4.4",
+    "rmc-list-view": "^0.11.5",
+    "rmc-notification": "^1.0.0"
+  }
+}

@@ -1,0 +1,55 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: #fafbfc;
+}
+.odd {
+  background: #fff;
+}
+.top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.votes {
+  font-size: 14px;
+  padding-right: 10px;
+  line-height: 14px;
+}
+.status {
+  color: #949ea6;
+  border: solid 1px #c2c8cc;
+  font-size: 10px;
+  text-align: center;
+  padding: 2px 4px;
+}
+
+.success {
+  color: #249cb3;
+  border-color: #249cb3;
+}
+
+.bp {
+  font-size: 10px;
+  color: #63727d;
+  margin-bottom: 4px;
+}
+.time {
+  font-size: 10px;
+  color: #949ea6;
+}
+.refund {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-radius: 13px;
+  background-color: #ffffff;
+  border: solid 1px #d5dce0;
+  margin-left: 20px;
+  font-size: 11px;
+  color: #63727d;
+}
