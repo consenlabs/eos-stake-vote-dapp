@@ -28,7 +28,7 @@ export function updateAccountInfoAndBalance(accountName, dispatch) {
     dispatch({
       type: UPDATE_EVNET, payload: {
         // isVotedBefore: voteInfo.producers && voteInfo.producers.length > 0,
-        // 如果先前的投票已经赎回，当做未投票过来判断
+        // Treat refund as not vote before
         cpuLimit: account.cpu_limit,
         netLimit: account.net_limit,
         isVotedBefore: voteInfo.producers && voteInfo.producers.length,

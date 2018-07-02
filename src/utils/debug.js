@@ -5,7 +5,7 @@ export function __debug() {
     window.imToken.eosProvider = 'https://api1-imtoken.eosasia.one'
     window.imToken.callAPI = (apiName, params, cb) => {
       // cb(null, true)
-      cb && cb({ message: '这是一个 mock 的失败消息' }, true)
+      cb && cb({ message: "It's a vote message" }, true)
     }
   }
 }

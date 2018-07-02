@@ -4,7 +4,6 @@ import './components/Common/Toast/index.css'
 import './index.css'
 import model from './model'
 
-
 // 1. Initialize
 const app = dva({
   history: createHistory(),

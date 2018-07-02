@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "EOS stake vote DApp",
   "main": "index.js",
-  "repository": "git@github.com:consenlabs/stake-vote.git",
+  "repository": "git@github.com:consenlabs/eos-stake-vote-dapp.git",
   "author": "xwartz <stddup@gmail.com>",
   "license": "MIT",
   "private": true,

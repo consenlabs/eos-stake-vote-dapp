@@ -43,7 +43,7 @@ export default class List extends React.Component {
     const { appState, onlyShowSelected } = this.props
     const listData = onlyShowSelected ? appState.selectedProducers : appState.producers
 
-    // TODO: 排序筛选
+    /* TODO: soft and filter */
     const sortType = appState.sortType
     let sortProducers = listData.slice(0)
     switch (sortType) {

@@ -18,7 +18,7 @@ export function setProvider(provider, chainId) {
 }
 
 /**
- * 获取账户 balance
+ * Fetch account balance
  * https://github.com/EOSIO/eosjs-api/blob/master/src/api/v1/chain.json#L2
  * @param {string} accountName
  */
@@ -33,7 +33,7 @@ export function getBalance(accountName) {
 }
 
 /**
- * 获取 eos global 信息
+ * Fetch eos global info
  * https://github.com/EOSIO/eosjs-api/blob/master/src/api/v1/chain.json#L43
  *
  *{
@@ -58,7 +58,7 @@ export function getChainInfo() {
 }
 
 /**
- * 抵押 Token 并投票
+ * Stake token and vote
  * @param {string} accountName
  * @param {Array} producers
  * @param {number} stake_net_quantity
@@ -110,7 +110,7 @@ export function delegatebwAndVote(accountName, producers, stake_net_quantity, st
 }
 
 /**
- * 取消抵押，并赎回
+ * Unstake tokens from CPU and bandwidth
  * @param {*} accountName
  * @param {*} stake_net_quantity
  * @param {*} stake_cpu_quantity
@@ -213,7 +213,7 @@ export function getProducers() {
 }
 
 /**
- * 获取 refund 请求列表
+ * Fetch refund list
  * @param {string} accountName
  */
 export function getRefund(accountName) {
@@ -274,7 +274,7 @@ export function getGlobal() {
 // ----------------------------- for old code ---------------------------------
 
 /**
- * 抵押 Token 并投票
+ * Stake tokens for bandwidth and/or CPU and optionally transfer
  * @param {string} accountName
  * @param {Array} producers
  * @param {number} stake_net_quantity
@@ -306,7 +306,7 @@ export function __old_delegatebwAndVote(accountName, producers, stake_net_quanti
 }
 
 /**
- * 取消抵押，并赎回
+ * Unstake tokens from CPU and bandwidth
  * @param {*} accountName
  * @param {*} stake_net_quantity
  * @param {*} stake_cpu_quantity

@@ -1,6 +1,6 @@
 # Stake Vote
 
-EOS stake vote DApp
+EOS stake vote DApp.
 
 ## Development
 
@@ -13,5 +13,9 @@ Dependencies
 yarn
 yarn start
 ```
+
+## Deployment
+
+This DApp depends on imToken DApp browser.
 
 copyright© imToken PTE. LTD.

@@ -2,40 +2,31 @@ export default {
   namespace: 'appState',
   state: {
     accountName: '',
-    // 总投票数
     totalActivatedStake: 0,
-    // 总投票 weight
     totalProducerVoteWeight: 0,
-    // 总发行量
     totalSupply: 900000000,
-    // 最大发行量
     maxSupply: 1000000000,
-    // eos 价格
     eosPrice: 11.83,
 
     // producer sort
     sortType: 0,
-
-    // bp 列表
     producers: [],
-    // 已选择的 bp 列表
     selectedProducers: [],
 
-    // 之前是否 投过票
     isVotedBefore: false,
-    // 当前抵押的 Token 数量
+    // Staked token amount
     staked: 0,
-    // 当前 Token balance
+    // Token balance
     balance: 0,
-    // 上次投的 bp name 列表
+    // Previous voted producers
     lastVotedProducerNames: [],
-    // 上次投票时间
+    // Previous vote time
     lastedVoteTime: 0,
-    // 上次赎回时间
+    // Previous unstake timestamp
     lastUnstakeTime: 0,
-    // 赎回中的数量
+    // Pending unstake amount
     unstaking: 0,
-    // 当前抵押
+    // Current delegated resource
     delegatedStakeDetail: {
       stake_net_quantity: '0 EOS',
       stake_cpu_quantity: '0 EOS'
@@ -50,7 +41,6 @@ export default {
       max: 1,
       used: 0,
     },
-    // refund 列表
     refunds: [],
   },
   reducers: {
