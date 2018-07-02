@@ -11,6 +11,7 @@ import SliderModal from './UnstakeSelected'
 import Toast from 'components/Common/Toast'
 import debounce from 'debounce'
 import i18n from 'i18n'
+import tracker from '../../utils/tracker'
 import { BigNumber } from 'bignumber.js'
 
 class Profile extends React.Component {
@@ -184,10 +185,7 @@ class Profile extends React.Component {
       }
     }
 
-<<<<<<< HEAD
-=======
     this.handleUnstakeTracker('undelegatebw')
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
 
     eosHelper.undelegatebw(
       appState.accountName,
@@ -197,26 +195,18 @@ class Profile extends React.Component {
         if (err) {
           if (err.code != 1001) {
             Toast.show(err.message)
-<<<<<<< HEAD
-          } else {
-          }
-        } else {
-=======
             this.handleUnstakeTracker('undelegatebw_falied')
           } else {
             this.handleUnstakeTracker('undelegatebw_canceled')
           }
         } else {
           this.handleUnstakeTracker('undelegatebw_successful')
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
           Toast.show(i18n.unstake_successful)
           updateAccountInfoAndBalance(appState.accountName, dispatch)
         }
       }
     )
   }
-<<<<<<< HEAD
-=======
 
   handleUnstakeTracker = (event) => {
     const { appState } = this.props
@@ -227,7 +217,6 @@ class Profile extends React.Component {
       producers: appState.lastVotedProducerNames,
     })
   }
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
 }
 
 export default connect(({ appState }) => ({ appState }))(Profile)

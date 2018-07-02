@@ -7,6 +7,7 @@ import BPList from 'components/Common/BPList'
 import styles from './index.css'
 
 import * as eosHelper from '../../utils/eosHelper'
+import tracker from '../../utils/tracker'
 import { amountToStake } from '../../utils/eosAmountToStake'
 import { updateAccountInfoAndBalance } from '../../utils/updateAccountInfoAndBalance'
 import initApp from '../../initApp'
@@ -82,8 +83,6 @@ class Vote extends React.Component {
     this.setState({ votes })
   }
 
-<<<<<<< HEAD
-=======
   handleVoteTacker = (event) => {
     const { votes } = this.state
     const { appState } = this.props
@@ -97,7 +96,6 @@ class Vote extends React.Component {
       producers: appState.selectedProducers.map(pd => pd.meta.owner),
     })
   }
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
 
   handleVote = () => {
     const { appState, dispatch } = this.props
@@ -137,11 +135,8 @@ class Vote extends React.Component {
     const stakedObject = amountToStake(Number(votes))
     const onlyVoteProducer = Number(votes) == 0
 
-<<<<<<< HEAD
-=======
     this.handleVoteTacker('delegatebw_and_vote')
 
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
     eosHelper.delegatebwAndVote(
       appState.accountName,
       appState.selectedProducers.map(pd => pd.meta.owner),
@@ -152,18 +147,12 @@ class Vote extends React.Component {
         if (err) {
           if (err.code != 1001) {
             Toast.show(`${i18n.vote_failed}: ${err.message}`)
-<<<<<<< HEAD
-          } else {
-          }
-        } else {
-=======
             this.handleVoteTacker('delegatebw_and_vote_failed')
           } else {
             this.handleVoteTacker('delegatebw_and_vote_canceled')
           }
         } else {
           this.handleVoteTacker('delegatebw_and_vote_successful')
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
           Toast.show(i18n.vote_successful)
           localStorage.setItem('lastedVoteTime', Date.now())
           updateAccountInfoAndBalance(appState.accountName, dispatch)

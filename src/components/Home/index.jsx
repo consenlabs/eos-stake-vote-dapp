@@ -10,6 +10,7 @@ import Filter from './Filter'
 import styles from './index.css'
 
 import * as eosHelper from '../../utils/eosHelper'
+import tracker from '../../utils/tracker'
 import initApp from '../../initApp'
 import { connect } from 'dva'
 import i18n from 'i18n'
@@ -50,10 +51,7 @@ class Home extends React.Component {
 
     setTimeout(() => {
       window.eos && this.updateChainInfo()
-<<<<<<< HEAD
-=======
       tracker.track('eos_dapp_landing')
->>>>>>> 6561ef44fec05ba61547a53203c1f0d29519b7c2
     }, 1000)
 
     this.globalInterval = setInterval(() => {
