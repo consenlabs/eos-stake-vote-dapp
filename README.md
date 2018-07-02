@@ -1,8 +1,17 @@
-# stake-vote
+# Stake Vote
+
 EOS stake vote DApp
 
-## dev & build
+## Development
 
+Dependencies
+
+* Node LTS/Carbon
+* yarn
+
+```shell
+yarn
 yarn start
+```
 
-yarn build
+copyright© imToken PTE. LTD.
